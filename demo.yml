@@ -33,7 +33,7 @@
   - name: Create a data container
     community.docker.docker_container:
       name: mydemo
-      image: flesh222/demoforhsbc:v2
+      image: flesh222/demoforhsbc:v3
       ports:
       # Publish container port 9000 as host port 8080
         - "80:8001"
