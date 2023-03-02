@@ -23,8 +23,7 @@
 
 - hosts: all
   become: yes
-  task: 
-
+  tasks: 
   - name: Pull an image
   community.docker.docker_image:
     name: KiddyWang/flesh222/demoforhsbc:v2
