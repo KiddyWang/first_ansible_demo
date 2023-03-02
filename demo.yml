@@ -26,6 +26,6 @@
   tasks: 
   - name: Pull an image
     community.docker.docker_image:
-      name: KiddyWang/flesh222/demoforhsbc:v2
+      name: flesh222/demoforhsbc:v2
       source: pull
       # Select platform for pulling. If not specified, will pull whatever docker prefers.
