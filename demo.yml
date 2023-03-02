@@ -29,3 +29,8 @@
       name: flesh222/demoforhsbc:v2
       source: pull
       # Select platform for pulling. If not specified, will pull whatever docker prefers.
+
+  - name: Create a data container
+    community.docker.docker_container:
+      name: mydemo
+      image: flesh222/demoforhsbc:v2
