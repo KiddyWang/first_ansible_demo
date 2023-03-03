@@ -26,15 +26,14 @@
   tasks: 
   - name: Pull an image
     community.docker.docker_image:
-      # name: flesh222/demoforhsbc:v2
-      name: registry.cn-hangzhou.aliyuncs.com/kiddydemo/hsbcdemo:v1
+      name: flesh222/demoforhsbc:v3
       source: pull
       # Select platform for pulling. If not specified, will pull whatever docker prefers.
 
   - name: Create a data container
     community.docker.docker_container:
       name: mydemo
-      image: kiddydemo/hsbcdemo:v1
+      image: flesh222/demoforhsbc:v3
       ports:
       # Publish container port 9000 as host port 8080
         - "80:8001"
